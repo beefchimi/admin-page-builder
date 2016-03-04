@@ -1,0 +1,21 @@
+!!!
+%html{:lang => "en"}
+
+  = Haml::Engine.new(File.read("dev/haml/partials/_doc_head.haml")).render(Object.new, :locals => "")
+
+  %body
+
+    #svgInject.visuallyhidden
+      / inject:svg
+      / endinject
+
+    = Haml::Engine.new(File.read("dev/haml/partials/_html_header.haml")).render(Object.new, :locals => "")
+    = Haml::Engine.new(File.read("dev/haml/partials/_html_toolbar.haml")).render(Object.new, :locals => "")
+
+    %main{:role => "main"}
+      .content
+        %img{:src => "assets/img/placeholder.jpg", :alt => ""}
+
+    = Haml::Engine.new(File.read("dev/haml/partials/_html_sidebar.haml")).render(Object.new, :locals => "")
+
+    -# = Haml::Engine.new(File.read("dev/haml/partials/_html_footer.haml")).render(Object.new, :locals => "")

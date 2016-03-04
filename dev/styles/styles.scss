@@ -1,0 +1,36 @@
+// ==|== master styles import ==================================================
+// =============================================================================
+
+// Setup styles
+// -----------------------------------------------------------------------------
+@import 'base--reset';
+@import 'base--funcs';
+@import 'base--vars';
+@import 'base--mixins';
+@import 'base--extends';
+@import 'base--anims';
+
+// Vendor styles
+// -----------------------------------------------------------------------------
+// @import 'vndr--name';
+
+// Component styles
+// -----------------------------------------------------------------------------
+// @import 'cpnt--slack';
+
+// Foundation styles
+// -----------------------------------------------------------------------------
+@import 'main--foundation';
+@import 'main--typography';
+// @import 'main--sections';
+
+// Modular styles
+// -----------------------------------------------------------------------------
+@import 'mod--toolbar';
+@import 'mod--ruler';
+@import 'mod--sidebar';
+@import 'mod--drawer';
+
+// Temporary styles
+// -----------------------------------------------------------------------------
+@import 'temp--placeholder';

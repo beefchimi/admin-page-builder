@@ -1,0 +1,16 @@
+// ==|== foundation ============================================================
+// =============================================================================
+
+// Root styling
+// -----------------------------------------------------------------------------
+html {
+  // @include htmlScrollLock;
+  background-color: $hex-sky;
+}
+body {
+  // animation: animFade 1200ms ease-in-out;
+}
+::selection {
+  color: $hex-white;
+  background-color: $hex-black;
+}

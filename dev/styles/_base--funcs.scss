@@ -1,0 +1,21 @@
+// ==|== functions =============================================================
+// =============================================================================
+
+// Asset paths
+// -----------------------------------------------------------------------------
+$assetBasePath: '../' !default;
+@function assetPath($type, $file) {
+  @return url($assetBasePath + '/' + $type + '/' + $file);
+}
+@function fontPath($file) {
+  @return assetPath('fonts', $file);
+}
+@function imgPath($file) {
+  @return assetPath('img', $file);
+}
+
+// Number conversion
+// -----------------------------------------------------------------------------
+@function numToRem($number) {
+  @return ($number / 10) + rem;
+}

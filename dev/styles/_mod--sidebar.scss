@@ -1,0 +1,82 @@
+// ==|== sidebar ===============================================================
+// =============================================================================
+
+// Variables
+// -----------------------------------------------------------------------------
+$sidebar-width: 24rem;
+
+// Sidebar
+// -----------------------------------------------------------------------------
+.sidebar {
+  @extend .overflow-scrolling;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: $sidebar-width;
+  background-color: $hex-sky--light;
+  border-left: $border-common;
+}
+.sidebar__section {
+  padding: $spacing;
+}
+.sidebar__header {
+  // same as drawer header
+  margin-bottom: $spacing;
+  h5 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $hex-slate--light;
+  }
+}
+// --- Avatars --- \\
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar--80 {
+  width: 4rem;
+  height: 4rem;
+}
+
+// Comments
+// -----------------------------------------------------------------------------
+.comments__list {
+}
+.comments__item {
+  margin-bottom: $spacing;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.comments__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  .avatar {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+  }
+  .comment__title {
+    flex: 1 1 auto;
+  }
+}
+.comments__title {
+  color: $hex-slate--lighter;
+  h6,
+  time {
+    font-size: 1.2rem;
+  }
+  h6 {
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+  }
+}
+.comments__body {
+  p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: $hex-slate--lighter;
+  }
+}

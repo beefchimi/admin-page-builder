@@ -1,0 +1,9 @@
+%footer.page__footer
+  %a.wrap__svg.logo__shopify-full--white{:href => "http://shopify.ca/", :title => "Visit the Shopify homepage"}
+    %svg{:viewBox => "0 0 176 51", "aria-labelledby" => "logo__shopify-full--white--title", :role => "img"}
+      %title#logo__shopify-full--white--title Shopify
+      %use{"xlink:href" => "#logo__shopify-full--white"}
+  %h1.heading.heading--micro Founded in 2006 &bull; proudly canadian
+
+%script{:src => "assets/js/scripts.min.js"}
+-# = Haml::Engine.new(File.read("dev/haml/partials/_js_analytics.haml")).render

@@ -1,0 +1,68 @@
+// ==|== drawer ================================================================
+// =============================================================================
+
+// Variables
+// -----------------------------------------------------------------------------
+$drawer-width: $sidebar-width - $toolbar-link-size;
+
+// Drawer
+// -----------------------------------------------------------------------------
+.drawer {
+  position: absolute; // fixed
+  z-index: -1; // 300;
+  top: 0; // $ruler-height - $border-width;
+  left: $toolbar-link-size;
+  bottom: 0;
+  width: $drawer-width;
+  background-color: $hex-slate;
+  transform: translateX(0);
+  transition: transform $ease-duration $ease-timing;
+
+  &.is-collapsed {
+    transform: translateX(-$drawer-width);
+  }
+
+  h2 {
+    padding: $spacing;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $hex-teal;
+  }
+
+}
+
+.drawer__list {
+}
+.drawer__item {
+}
+.drawer__link {
+  display: block;
+  padding: ($spacing / 2) $spacing;
+
+  font-size: 1.4rem;
+  color: $hex-teal;
+  background-color: $hex-slate;
+  transition: background-color $ease-duration $ease-timing;
+
+  &:hover {
+    background-color: $hex-slate--light;
+  }
+
+}
+
+
+/*
+
+%nav#Drawer.drawer
+
+  %h2 Layout
+
+  %ul.drawer__list
+    %li.drawer__item
+      %a.drawer__link{:href => "#", :title => ""} Option 1
+    %li.drawer__item
+      %a.drawer__link{:href => "#", :title => ""} Option 2
+    %li.drawer__item
+      %a.drawer__link{:href => "#", :title => ""} Option 3
+
+*/

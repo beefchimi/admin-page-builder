@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="IconButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<circle cx="26" cy="32" r="3"/>
+<circle cx="32" cy="38" r="3"/>
+<circle cx="38" cy="32" r="3"/>
+<circle cx="32" cy="26" r="3"/>
+<path d="M32,9C19.318,9,9,19.318,9,32s10.318,23,23,23s23-10.318,23-23S44.682,9,32,9z M32,52c-11.046,0-20-8.954-20-20
+	s8.954-20,20-20c11.046,0,20,8.954,20,20S43.046,52,32,52z"/>
+<path d="M32,0C14.327,0,0,14.327,0,32c0,17.673,14.327,32,32,32s32-14.327,32-32C64,14.327,49.673,0,32,0z M32,58
+	C17.664,58,6,46.336,6,32C6,17.664,17.664,6,32,6c14.336,0,26,11.664,26,26C58,46.336,46.336,58,32,58z"/>
+</svg>

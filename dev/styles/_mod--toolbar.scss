@@ -1,0 +1,63 @@
+// ==|== toolbar ===============================================================
+// =============================================================================
+
+/*
+
+Need to add min-height styling...
+I want each tool item to collapse into the "more" item when there is no longer room
+
+*/
+
+// Variables
+// -----------------------------------------------------------------------------
+$toolbar-link-size: 4rem;
+$toolbar-link-padding: 1rem;
+
+// Toolbar
+// -----------------------------------------------------------------------------
+.toolbar {
+  position: fixed;
+  z-index: 400;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.toolbar__list {
+  @extend .overflow-scrolling;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 100%;
+  background-color: $hex-slate--darker;
+}
+.toolbar__item {
+}
+.toolbar__link {
+  display: block;
+  position: relative; // required to stay above drawer?
+  padding: $toolbar-link-padding;
+  width: $toolbar-link-size;
+  height: $toolbar-link-size;
+  text-align: center;
+  color: $hex-white;
+  background-color: $hex-slate--darker;
+}
+.toolbar__link--external {
+  transition: background-color $ease-duration $ease-timing;
+  &:hover {
+    background-color: $hex-slate;
+  }
+}
+.toolbar__link--tool,
+.toolbar__link--more {
+  .icon {
+    svg {
+      fill: currentColor;
+    }
+  }
+  &:hover {
+    color: $hex-teal;
+  }
+  &:active {
+    color: $hex-teal--dark;
+  }
+}

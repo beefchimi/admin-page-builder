@@ -1,0 +1,60 @@
+// ==|== ruler =================================================================
+// =============================================================================
+
+// Variables
+// -----------------------------------------------------------------------------
+$ruler-height: 2rem;
+$tick-width: 0.1rem;
+$tick-height-tall: 2.4rem;
+$tick-height-short: $tick-height-tall / 2;
+$tick-position-tall: 100% 32%;
+$tick-position-short: 100% 16%;
+$marker-size: 1rem;
+
+// Header
+// -----------------------------------------------------------------------------
+.page__header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 4rem;
+  padding-right: 24rem;
+}
+
+// Ruler
+// -----------------------------------------------------------------------------
+.ruler {
+  position: relative;
+  z-index: 101;
+  height: $ruler-height;
+  border-bottom: $border-common;
+  background: repeating-linear-gradient(90deg, $hex-sky--darker, $hex-sky--darker $tick-width, transparent 0, transparent $tick-height-tall) 50% no-repeat,
+              repeating-linear-gradient(90deg, $hex-sky--darker, $hex-sky--darker $tick-width, transparent 0, transparent $tick-height-short) 50% no-repeat,
+              $hex-sky--light;
+	background-size: $tick-position-tall, $tick-position-short, 100% 100%;
+  &::before {
+     @include posCover(absolute, $index: 102);
+     content: ' ';
+     display: block;
+     // background-color: #000;
+  }
+}
+.marker {
+  position: absolute;
+  z-index: 103;
+  bottom: 0;
+  width: $marker-size;
+  height: $marker-size;
+  svg {
+    fill: $hex-teal;
+  }
+}
+.marker--left {
+  left: 0;
+}
+.marker--right {
+  right: 0;
+  transform: rotate(270deg);
+}

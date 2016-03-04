@@ -1,0 +1,18 @@
+// ==|== sections ==============================================================
+// =============================================================================
+
+// this should really be a scrollable area... otherwise, you will get page
+// scrolling overtop of the sidebar... which may have its own scrolling.
+// must update!
+
+// Main
+// -----------------------------------------------------------------------------
+main {
+  padding: $ruler-height $sidebar-width 0 $toolbar-link-size;
+  .content {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
