@@ -38,7 +38,8 @@ $drawer-width: $sidebar-width - $toolbar-link-size;
 .drawer__link {
   display: block;
   padding: ($spacing / 2) $spacing;
-
+  width: 100%;
+  text-align: left;
   font-size: 1.4rem;
   color: $hex-teal;
   background-color: $hex-slate;

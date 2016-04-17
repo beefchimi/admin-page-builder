@@ -18,11 +18,11 @@
         %h2 Icons
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--button
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Button helper"}
@@ -34,11 +34,11 @@
         %h2 Buttons
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--layout
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Layout helper"}
@@ -50,11 +50,11 @@
         %h2 Layout
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--tag
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Tag helper"}
@@ -66,11 +66,27 @@
         %h2 Tags
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
+
+    %li.toolbar__item.toolbar__item--banner
+      %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Badge helper"}
+        .icon.icon--tool-badge
+          %svg{:viewBox => "0 0 64 64", "aria-labelledby" => "IconBadgeTitle", :role => "img"}
+            %title#IconBadgeTitle Badge
+            %use{"xlink:href" => "#icon-badge"}
+      .drawer.is-collapsed
+        %h2 Badge
+        %ul.drawer__list
+          %li.drawer__item
+            %button.drawer__link{:type => "button"} Option 1
+          %li.drawer__item
+            %button.drawer__link{:type => "button"} Option 2
+          %li.drawer__item
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--card
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Card helper"}
@@ -82,11 +98,11 @@
         %h2 Cards
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--tabs
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Tabs helper"}
@@ -98,11 +114,11 @@
         %h2 Tabs
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--progress
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Progress helper"}
@@ -114,11 +130,11 @@
         %h2 Progress
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--popover
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Popover helper"}
@@ -130,11 +146,11 @@
         %h2 Popover
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--modal
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Modal helper"}
@@ -146,11 +162,11 @@
         %h2 Modal
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--form
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Form helper"}
@@ -162,11 +178,11 @@
         %h2 Form
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--banner
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Banner helper"}
@@ -178,11 +194,11 @@
         %h2 Banner
         %ul.drawer__list
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 1
+            %button.drawer__link{:type => "button"} Option 1
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 2
+            %button.drawer__link{:type => "button"} Option 2
           %li.drawer__item
-            %a.drawer__link{:href => "#", :title => ""} Option 3
+            %button.drawer__link{:type => "button"} Option 3
 
     %li.toolbar__item.toolbar__item--cube
       %a.toolbar__link.toolbar__link--tool{:href => "#", :title => "Cube helper"}
@@ -197,3 +213,17 @@
           %svg{:viewBox => "0 0 64 64", "aria-labelledby" => "IconMoreTitle", :role => "img"}
             %title#IconMoreTitle More
             %use{"xlink:href" => "#icon-more"}
+
+    %li.toolbar__item.toolbar__item--delete
+      %a.toolbar__link.toolbar__link--tool.delete{:href => "#", :title => "Delete component"}
+        .icon.icon--tool-delete
+          %svg{:viewBox => "0 0 64 64", "aria-labelledby" => "IconDeleteTitle", :role => "img"}
+            %title#IconDeleteTitle Delete
+            %use{"xlink:href" => "#icon-trash"}
+
+    %li.toolbar__item.toolbar__item--delete-all
+      %a.toolbar__link.toolbar__link--tool.delete-all{:href => "#", :title => "Delete all components"}
+        .icon.icon--tool-delete-all
+          %svg{:viewBox => "0 0 64 64", "aria-labelledby" => "IconDeleteAllTitle", :role => "img"}
+            %title#IconDeleteAllTitle Delete
+            %use{"xlink:href" => "#icon-trashplus"}

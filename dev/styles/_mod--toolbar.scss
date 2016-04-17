@@ -52,12 +52,35 @@ $toolbar-link-padding: 1rem;
   .icon {
     svg {
       fill: currentColor;
+      transition: fill $ease-duration $ease-timing;
     }
   }
+}
+
+.toolbar__link--tool {
   &:hover {
     color: $hex-teal;
   }
   &:active {
     color: $hex-teal--dark;
+  }
+}
+
+.toolbar__link--more {
+  &:hover {
+    color: $hex-yellow;
+  }
+  &:active {
+    color: $hex-yellow--dark;
+  }
+}
+
+.toolbar__link--tool.delete,
+.toolbar__link--tool.delete-all {
+  &:hover {
+    color: $hex-red;
+  }
+  &:active {
+    color: $hex-red--dark;
   }
 }

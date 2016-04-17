@@ -96,7 +96,7 @@ gulp.task("styles", () => {
       .pipe(GLP.autoprefixer({
         browsers: ["last 3 version", "ios 6", "android 4"]
       }))
-      .pipe(GLP.cssnano())
+      // .pipe(GLP.cssnano())
       .pipe(GLP.rename({
         suffix: ".min"
       }))

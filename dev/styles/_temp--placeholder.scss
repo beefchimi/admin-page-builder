@@ -8,7 +8,7 @@
 // Main
 // -----------------------------------------------------------------------------
 main {
-  padding: $ruler-height $sidebar-width 0 $toolbar-link-size;
+  padding: ($ruler-height + $spacing) ($sidebar-width + $spacing) 0 ($toolbar-link-size + $spacing);
   .content {
     img {
       margin-left: auto;
